@@ -7,14 +7,21 @@
     <mat-menu #menu="matMenu">
         <div class="hide-menu">
             <!-- <button mat-menu-item routerLink="/platform">Platform</button> -->
+            <button mat-menu-item routerLink="/postpage">About</button>
+            <button mat-menu-item routerLink="/userpage">Contact</button>
             <button mat-menu-item routerLink="/postpage">Posts</button>
-            <button mat-menu-item routerLink="/userpage">Credentials</button>
+            <button mat-menu-item routerLink="/userpage">User Profile</button>
+            <button mat-menu-item routerLink="/postpage">Logout</button>
+            <button mat-menu-item routerLink="/userpage">Login</button>
         </div>
     </mat-menu>
     <div class="expanded-menu">
-      <!--   <button mat-button routerLink="/platform">Platform</button> -->
+        <button mat-button routerLink="/postpage">About</button>
+        <button mat-button routerLink="/userpage">Contact</button>
         <button mat-button routerLink="/postpage">Posts</button>
-        <button mat-button routerLink="/userpage">Credentials</button>
+        <button mat-button routerLink="/userpage">User Profile</button>
+        <button mat-button routerLink="/postpage">Logout</button>
+        <button mat-button routerLink="/userpage">Login</button>
     </div>
 
     <div class="button__menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">

@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from '../../components/base/base.component';
 
 @Component({
   selector: 'app-postpage',
-  templateUrl: './postpage.component.html',
+  templateUrl: '../../components/base/base.component.html',
+  //'./postpage.component.html',
   styleUrls: ['./postpage.component.css']
 })
-export class PostpageComponent implements OnInit {
+export class PostpageComponent extends BaseComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
 
+    super()
+  }
+  override heading = ""
   ngOnInit(): void {
   }
 
